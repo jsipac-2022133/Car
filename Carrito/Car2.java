@@ -6,9 +6,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Car2 extends Actor
-{
-    public Car2() {
+public class Car2 extends Actor{
+    private int speed;
+    
+    public Car2(int v) {
         GreenfootImage imagen = getImage();
 
         int nuevoAncho = 40;
@@ -18,8 +19,26 @@ public class Car2 extends Actor
         imagen.scale(nuevoAncho, nuevoAlto);
 
         setImage(imagen);
+        
+        speed=v;
     }
 
+    public void act(){
+        setLocation(getX(), getY()+speed);
+        
+        if(getY()>=getWorld().getHeight()-1){
+            MyWorld mundo=(MyWorld) getWorld();
+            mundo.removeObject(this);
+            mundo.aumentarPuntuacion(10);
+            mundo.disminuirNumRivales();
+            mundo.aumentarNumAdelantamientos();
+        }
     
+    }    
+    
+    public void aumentaVelocidad() {
+    speed++;
+}
+
 }
 
