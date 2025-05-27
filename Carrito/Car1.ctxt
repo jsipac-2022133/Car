@@ -1,12 +1,23 @@
 #BlueJ class context
 comment0.target=Car1
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Car1\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=v
 comment1.target=Car1(int)
+comment10.params=
+comment10.target=void\ activarInvulnerabilidad()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ verificarChoque()
+comment3.target=void\ moverJugador()
 comment4.params=
-comment4.target=void\ aumentaVelocidad()
-numComments=5
+comment4.target=void\ verificarChoque()
+comment5.params=
+comment5.target=void\ moverUnCarrilAleatorio()
+comment6.params=
+comment6.target=void\ realizarDerrape()
+comment7.params=
+comment7.target=void\ aumentaVelocidad()
+comment8.params=
+comment8.target=void\ activarTurbo()
+comment9.params=
+comment9.target=void\ desactivarTurbo()
+numComments=11

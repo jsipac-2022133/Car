@@ -6,10 +6,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Car2 extends Actor{
+public class Banano extends Actor{
     private int speed;
     
-    public Car2(int v) {
+    public Banano(int v) {
         GreenfootImage imagen = getImage();
 
         int nuevoAncho = 40;
@@ -24,7 +24,7 @@ public class Car2 extends Actor{
     }
 
     public void act(){
-        setLocation(getX(), getY()+2);
+        setLocation(getX(), getY()+speed);
         
         if(getY()>=getWorld().getHeight()-1){
             MyWorld mundo=(MyWorld) getWorld();
@@ -41,4 +41,3 @@ public class Car2 extends Actor{
 }
 
 }
-
